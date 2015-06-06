@@ -36,6 +36,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'myblogCore',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -58,8 +59,13 @@ WSGI_APPLICATION = 'myBlogLantr.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'myblog_lantr_db',
+	'USER': 'myblog_user',
+	'PASSWORD': '741852',
+	'OPTIONS' : {
+            'local_infile':1,
+	},
     }
 }
 
@@ -81,3 +87,12 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.7/howto/static-files/
 
 STATIC_URL = '/static/'
+
+TEMPLATE_DIRS = {
+	BASE_DIR + '/templates',
+}
+
+LOGIN_URL = '/login/'
+
+MEDIA_ROOT = BASE_DIR + '/uploads/'
+MEDIA_URL = '/uploads/'
