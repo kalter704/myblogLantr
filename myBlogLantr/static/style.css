@@ -1,0 +1,80 @@
+#site_background {
+	background: url(pic_for_site/background.jpg) #fafafc;
+}
+
+#top_bar {
+	background: url(pic_for_site/pic_side_bar.jpg) repeat-x #5e9d9d;
+	height: 35px;
+}
+
+#line_bottom_top_bar {
+	background: url(pic_for_site/line_bottom_side_bar.png);
+	height: 14px;
+}
+
+.button_top_bar {
+	display: inline-block;
+	height: 35px;
+	padding: 5px;
+	padding-bottom: 0px;
+}
+
+.button_top_bar:hover {
+	background: url(pic_for_site/pic_side_bar_2.jpg);
+}
+
+.button_top_bar:active {
+	background: url(pic_for_site/pic_side_bar_3.jpg);
+}
+
+.a_button_top_bar {
+	color: black;
+}
+
+a.a_button_top_bar:hover {
+	color: black;
+	text-decoration: none;
+}
+
+body {
+	font-family: Courier New;
+}
+
+a.a_button_top_bar:active {
+	color: black;
+}
+
+a.a_button_top_bar:visited {
+	color: black;
+	text-decoration: none;
+}
+
+.spase_bottom_top_bar {
+	height: 154px;
+}
+
+.label_text {
+	display: inline-block;
+	margin-top: 54px;
+	font-size: 50px;
+	
+}
+
+#user_menu {
+	margin-top: 32px;
+}
+
+img.avatar {
+	float: left;
+	margin-right: 5px;
+	width: 90px;
+	height: 90px;
+}
+
+#user_menu>a {
+	display: block;
+}
+
+a.text {
+	white-space: nowrap;
+}

@@ -6,39 +6,83 @@
 		<!-- Bootstrap -->
 		<link href="../../bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
 		<script src="../../bootstrap/js/jquery.js"></script>
-		<link href="../../marck/marck.css" rel="stylesheet" type="text/css">
 		<link href="../../style.css" rel="stylesheet">
 	</head>
-	<body>
+	<body id="site_background">
+		
+		<div id="top_bar">
+			<div class="container">
+				<a href="#" class="a_button_top_bar">
+					<div class="button_top_bar">
+						Главная страница
+					</div>
+				</a>
+				<a href="#" class="a_button_top_bar">
+					<div class="button_top_bar">
+						Подписки
+					</div>
+					</a>
+				<a href="#" class="a_button_top_bar">
+					<div class="button_top_bar">
+						Все авторы
+					</div>
+				</a>
+			</div>
+		</div>
+
+		<div id="line_bottom_top_bar"></div>
+		
+		
 		<div class="container">
-			<div style="background: blue;">
-				awegawerg
+			<div class="row" >
+				<div class="span9 spase_bottom_top_bar">
+					<div class="label_text">
+						Мои мысли
+					</div>
+				</div>
+				
+				<div class="span3 spase_bottom_top_bar">
+					<div  id="user_menu">
+						
+						
+						<a href="#" class="text" style="margin-top: 50px;">Вход</a>
+						<a href="#" class="text">Регистрация</a>
+						
+						<!--
+						<img class="avatar" src="http://placehold.it/90x90/2ecc71/ecf0f1">
+						<a href="#" class="text">Написать статью</a>
+						<a href="#" class="text">Мои статьи</a>
+						<a href="#" class="text">Настройка</a>
+						<a href="#" class="text">Выход</a>
+						-->
+					</div>
+				</div>
 			</div>
 			<div class="row">
-				<div class="span8" style="background: green;">
+				<div class="span9" style="background: green;">
 					<div id="main_col">
 						{% block main %}
 							Главный блок
 						{% endblock %}
 					</div>
 				</div>
-				<div class="span4" id="right_col" style="background: red;">
-					<div class="inside_right_col">
-						<h3>Популярные теги</h3>
-						<ul class="inline">
-							<li>perl</li>
-							<li>python</li>
-							<li>TechnoPark</li>
-							<li>MySql</li>
-							<li>django</li>
-							<li>Mail.Ru</li>
-							<li>Voloshin</li>
-							<li>Firefox</li>
+				<div class="span3" style="background: red;">
+					<div style="margin-bottom: 40px;">
+						<h4>Популярные статьи</h4>
+						<ul>
+							<li><a href="#">perl</a></li>
+							<li><a href="#">python</a></li>
+							<li><a href="#">TechnoPark</a></li>
+							<li><a href="#">MySql</a></li>
+							<li><a href="#">django</a></li>
+							<li><a href="#">Mail.Ru</a></li>
+							<li><a href="#">Voloshin</a></li>
+							<li><a href="#">Firefox</a></li>
 						</ul>
 					</div>
-					<div class="inside_right_col">
-						<h3>Лучшие авторы</h3>
-						<ul class="best_authors">
+					<div>
+						<h4>Последние статьи</h4>
+						<ul>
 							<li><a href="#">Mr. Freeman</a></li>
 							<li><a href="#">Dr. House</a></li>
 							<li><a href="#">Bender</a></li>
